@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseForbidden
-
+ 
 from classroom.models import Course, Category, Grade, Batch_Category
 
 from classroom.forms import NewCourseForm
