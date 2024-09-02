@@ -6,7 +6,7 @@ from classroom.models import Course, Category, Grade, Batch_Category
 
 from classroom.forms import NewCourseForm
 
-
+ 
 # Create your views here.
 
 @login_required
