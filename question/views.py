@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 
 from question.models import Question, Answer, Votes
 from question.forms import QuestionForm, AnswerForm 
-
+ 
 from classroom.models import Course
 
 def NewStudentQuestion(request, course_id):
