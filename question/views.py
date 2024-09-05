@@ -9,7 +9,7 @@ from question.forms import QuestionForm, AnswerForm
 from classroom.models import Course
 
 def NewStudentQuestion(request, course_id):
-	user = request.user
+	user = request.user 
 	course = get_object_or_404(Course, id=course_id)
  
 	if request.method == 'POST':
