@@ -11,7 +11,7 @@ from classroom.models import Course
 def NewStudentQuestion(request, course_id):
 	user = request.user
 	course = get_object_or_404(Course, id=course_id)
-
+ 
 	if request.method == 'POST':
 		form = QuestionForm(request.POST)
 		if form.is_valid():
