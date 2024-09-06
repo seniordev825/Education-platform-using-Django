@@ -8,7 +8,7 @@ from classroom.forms import NewCourseForm
 
  
 # Create your views here.
-
+ 
 @login_required
 def index(request):
 	user = request.user
