@@ -10,7 +10,7 @@ from classroom.forms import NewCourseForm
 # Create your views here.
  
 @login_required
-def index(request):
+def index(request): 
 	user = request.user
 	courses = Course.objects.filter(enrolled=user)
 
