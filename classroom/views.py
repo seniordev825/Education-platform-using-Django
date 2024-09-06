@@ -38,7 +38,7 @@ def batchCategories(request):
 def Categories(request,id):
 	categories = Category.objects.filter(id=id)
 
-	context = {
+	context = { 
 		'categories': categories
 	}
 	return render(request, 'classroom/categories.html', context)
