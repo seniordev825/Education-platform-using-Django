@@ -10,7 +10,7 @@ from completion.models import Completion
 from page.forms import NewPageForm
 
 # Create your views here.
-
+ 
 @login_required
 def NewPageModule(request, course_id, module_id):
 	user = request.user
