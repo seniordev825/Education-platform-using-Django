@@ -6,7 +6,6 @@ from page.models import Page, PostFileContent
 from classroom.models import Course
 from module.models import Module
 from completion.models import Completion
-
 from page.forms import NewPageForm
 
 # Create your views here.
