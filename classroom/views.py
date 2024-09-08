@@ -13,7 +13,7 @@ from classroom.forms import NewCourseForm
 def index(request): 
 	user = request.user
 	courses = Course.objects.filter(enrolled=user)
-
+ 
 	context = {
 		'courses': courses
 	}
