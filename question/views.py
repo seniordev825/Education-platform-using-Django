@@ -39,7 +39,7 @@ def Questions(request, course_id):
 
 	context = {
 		'course': course,
-		'questions': questions_data,
+		'questions': questions_data, 
 	}
 	return render(request, 'question/questions.html', context)
 
