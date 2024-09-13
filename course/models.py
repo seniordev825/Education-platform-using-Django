@@ -3,7 +3,7 @@ from django.db import models
 from ckeditor.fields import RichTextField
 # Create your models here.
 
-
+ 
 class PaidCourse(models.Model):
     course = models.CharField(max_length=100,verbose_name='Course Name')
     desciption = RichTextField(default='open',blank=True,null=True)
