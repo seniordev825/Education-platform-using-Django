@@ -11,7 +11,7 @@ class PaidCourse(models.Model):
     video = models.FileField(upload_to='Course/video',verbose_name='Tittle Video')
     price = models.IntegerField()
     create = models.DateTimeField(auto_now_add=True)
-
+ 
     def __str__(self):
         return self.course
 
