@@ -25,7 +25,7 @@ def batchCategories(request):
 	pro = None
 	cat = Batch_Category.objects.all()
 	catgy = request.GET.get('batch')
-	if catgy:
+	if catgy: 
 		pro = Category.objects.filter(batch=catgy)
 		print(pro)
 	context = {
