@@ -26,7 +26,7 @@ class Question(models.Model):
 		return Answer.objects.filter(question=self).count()
 
 
-class Answer(models.Model):
+class Answer(models.Model): 
 	user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='answer_user')
 	question = models.ForeignKey(Question, on_delete=models.CASCADE)
 	body = RichTextField()
