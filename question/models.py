@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 #3rd apps field
 from ckeditor.fields import RichTextField
-
+ 
 # Create your models here.
 
 VOTES_CHOICES = (
