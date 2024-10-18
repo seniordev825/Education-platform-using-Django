@@ -16,8 +16,7 @@ STATUS_CHOICES = (
 	('graded', 'Graded'),
 )
 
-
-def user_directory_path(instance, filename):
+def user_directory_path(instance, filename)
 
 	#THis file will be uploaded to MEDIA_ROOT /the user_(id)/the file
 	return 'user_{0}/{1}'.format(instance.user.id, filename)
