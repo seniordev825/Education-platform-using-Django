@@ -10,7 +10,7 @@ from page.forms import NewPageForm
 
 # Create your views here.
  
-@login_required
+@login_required 
 def NewPageModule(request, course_id, module_id):
 	user = request.user
 	course = get_object_or_404(Course, id=course_id)
